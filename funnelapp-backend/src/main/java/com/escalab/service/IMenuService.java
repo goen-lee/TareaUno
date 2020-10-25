@@ -1,5 +1,10 @@
 package com.escalab.service;
 
-public interface IMenuService {
+import java.util.List;
 
+import com.escalab.model.Menu;
+
+public interface IMenuService extends ICRUD<Menu> {
+	
+	List<Menu> listarMenuPorUsuario(String nombre);
 }

@@ -1,5 +1,7 @@
 package com.escalab.service;
 
-public interface IVentaService {
+import com.escalab.model.Venta;
+
+public interface IVentaService extends ICRUD<Venta>{
 
 }
