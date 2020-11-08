@@ -1,14 +1,14 @@
-/*package com.escalab.service.impl;
+package com.escalab.service.impl;
 
-import org.springframework.security.core.Authentication;
+/*import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service*/
 public class AuthServiceImpl {
 	
-	public boolean tieneAcceso(String path) {
+	/*public boolean tieneAcceso(String path) {
 		boolean rpta = false;
 		
 		String metodoRol = "";
@@ -42,5 +42,5 @@ public class AuthServiceImpl {
 		}
 		
 		return rpta;
-	}
-}*/
+	}*/
+}

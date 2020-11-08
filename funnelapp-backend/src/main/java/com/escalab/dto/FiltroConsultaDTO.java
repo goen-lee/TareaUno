@@ -8,6 +8,8 @@ public class FiltroConsultaDTO {
 	private String marca;
 	private Integer IdProducto;
 	private LocalDateTime fechaVenta;
+	private String NombreCliente;
+	private String NombreVendedor;
 	
 	public LocalDateTime getFechaVenta() {
 		return fechaVenta;
@@ -32,5 +34,17 @@ public class FiltroConsultaDTO {
 	}
 	public void setIdProducto(Integer idProducto) {
 		IdProducto = idProducto;
+	}
+	public String getNombreCliente() {
+		return NombreCliente;
+	}
+	public void setNombreCliente(String nombreCliente) {
+		NombreCliente = nombreCliente;
+	}
+	public String getNombreVendedor() {
+		return NombreVendedor;
+	}
+	public void setNombreVendedor(String nombreVendedor) {
+		NombreVendedor = nombreVendedor;
 	}
 }

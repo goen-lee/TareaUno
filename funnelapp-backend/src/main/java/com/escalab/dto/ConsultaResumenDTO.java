@@ -4,15 +4,17 @@ public class ConsultaResumenDTO {
 	
 	private Integer cantidad;
 	private String  nombreProducto;
+	private String  fecha;
 	
 	public ConsultaResumenDTO() {
 		
 	}
-
+	
 	public ConsultaResumenDTO(Integer cantidad, String nombreProducto) {
 		super();
 		this.cantidad = cantidad;
 		this.nombreProducto = nombreProducto;
+		this.fecha = fecha;
 	}
 
 	public Integer getCantidad() {
@@ -30,4 +32,15 @@ public class ConsultaResumenDTO {
 	public void setNombreProducto(String nombreProducto) {
 		this.nombreProducto = nombreProducto;
 	}
+
+	public String getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+
+	
+	
 }

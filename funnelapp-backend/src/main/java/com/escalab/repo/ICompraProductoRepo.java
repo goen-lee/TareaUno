@@ -15,6 +15,6 @@ public interface ICompraProductoRepo extends JpaRepository<CompraProducto, Integ
 	@Query(value = "INSERT INTO compra_producto(idProducto, idVenta VALUE (:idProducto, :idVenta)", nativeQuery = true)
 	Integer Registrar(@Param("idProducto") Integer idProducto, @Param("idVenta") Integer idVenta);
 
-	@Query("from CompraProducto cp where ce.producto.idProducto = :idProducto")
+	@Query("from CompraProducto cp where cp.producto.idProducto = :idProducto")
 	List<CompraProducto> listarVentasPorProductos(@Param("idProducto") Integer idProducto);
 }

@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import com.escalab.model.Cliente;
 import com.escalab.repo.IClienteRepo;
@@ -31,6 +33,10 @@ public class ClienteServiceImpl implements IClienteService {
 	@Override
 	public List<Cliente> listar(){
 		return repo.findAll();	
+	}
+	
+	public Page<Cliente> listarPageable(Pageable pageable){
+		return repo.findAll(pageable);
 	}
 	
 	@Override
